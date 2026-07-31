@@ -90,6 +90,9 @@ app.delete('/favoritos/:id', async (req, res) => {
 
 });
 
+app.get("/", (req, res) => {
+  res.send("API funcionando");
+});
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
